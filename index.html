@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Orc FIGHT</title>
+  <link rel="stylesheet" type= "text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/Header.png" alt="Title">
+  </header>
+  <form action="" id='demoForm'>
+    <label>
+      <input type="radio" name="player1" id="mango1" value="mango" checked>
+      <img src="images/mango-label.png" alt="Mango">
+      <img src="images/Mango1.png" alt="Mango Ready">
+    </label>
+    <label>
+      <input type="radio" name="player1" id="walrus1" value="walrus">
+      <img src="images/walrus-label.png" alt="Walrus">
+      <img src="images/Walrus1.png" alt="Walrus Ready">
+    </label>
+    <br>
+    <img src="images/versus-label.png" alt="versus" class="versus">
+    <br>
+    <label>
+      <input type="radio" name="player2" id="mango2" value="mango">
+      <img src="images/mango-label.png" alt="Mango">
+      <img src="images/Mango1.png" alt="Mango Ready">
+    </label>
+    <label>
+      <input type="radio" name="player2" id="walrus2" value="walrus" checked>
+      <img src="images/walrus-label.png" alt="Walrus">
+      <img src="images/Walrus1.png" alt="Walrus Ready">
+    </label>
+    <br>
+    <label for="fight-button"><img src="images/fight-button.png" alt="fight button" class="fight-image"></label>
+    <input type="submit" name="submit" value="" id="fight-button" onclick="fightClick(); return false;">
+  </form>
+  <div id="contestantOne"></div>
+  <div id="contestantTwo"></div>
+  <script type="text/javascript" src="orcfight.js"></script>
+
+</body>
+</html>
